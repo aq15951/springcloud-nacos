@@ -1,4 +1,4 @@
-package com.ligt.nacos.consumer.nacosconsumer;
+package com.ligt.nacos.consumer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

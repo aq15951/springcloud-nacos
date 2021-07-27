@@ -12,14 +12,20 @@
     <artifactId>nacos</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>nacos</name>
+    <packaging>pom</packaging>
     <description>nacos</description>
     <properties>
         <skipTests>true</skipTests>
         <java.version>1.8</java.version>
-        <spring-cloud.version>Hoxton.SR8</spring-cloud.version>
-        <spring-boot.version>2.3.3.RELEASE</spring-boot.version>
+        <spring-cloud.version>Hoxton.SR9</spring-cloud.version>
+        <spring-boot.version>2.3.2.RELEASE</spring-boot.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <modules>
+        <module>nacos-consumer</module>
+        <module>nacos-provider</module>
+    </modules>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -37,7 +43,6 @@
             <artifactId>lombok</artifactId>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
